@@ -150,7 +150,7 @@ public class HornLinkClient implements ClientModInitializer {
         }
 
         if (pendingClick.getAndSet(false)) {
-            if (client.player == null || client.level == null || client.screen != null) {
+           if (client.player == null || client.level == null) {
                 LOG.info("Horn Link: trigger received but this window is not in-game (or a menu is open). Ignored.");
                 return;
             }
