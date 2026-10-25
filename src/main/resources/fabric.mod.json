@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "hornlink",
+  "version": "${version}",
+  "name": "Horn Link",
+  "description": "Blow a goat horn in one Minecraft window and a second window right-clicks automatically.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.hornlink.HornLinkClient"]
+  },
+  "mixins": [
+    { "config": "hornlink.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": ">=26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
